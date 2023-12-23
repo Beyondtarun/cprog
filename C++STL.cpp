@@ -24,6 +24,11 @@ vector<int> v;
 
 //push_back & emplace_back (faster then push_back)
 v.push_back(11);//insert 1 into vector
+v.push_back(12);
+v.push_back(16);
+v.push_back(95);
+v.push_back(45);
+v.push_back(145);
 v.emplace_back(22);//insert 2 into vector
 cout<<v[0]<<v[1]; //return garbage value on non existent index
 
@@ -47,5 +52,8 @@ vector<int>:: iterator it = v.begin();//points to the memrory of first index
 //vector<int>:: iterator it = v.rbegin(); //point to the last element
 cout<<"\n"<<*it;
 cout<<"\n"<<v.back();//print last element
-
+cout<<"\n Loop Begins";
+for(it=v.begin();it!=v.end();it++){
+    cout<<"\n"<<*it;
+}
 }
