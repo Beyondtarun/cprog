@@ -45,4 +45,6 @@ vector<int>:: iterator it = v.begin();//points to the memrory of first index
 //vector<int>:: iterator it = v.rbegin(); //point to the last element
 
 cout<<*it;
+cout<<"\n"<<v.back();//print last element
+
 }
