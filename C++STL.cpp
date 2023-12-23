@@ -26,13 +26,15 @@ vector<int> v;
 v.push_back(11);//insert 1 into vector
 v.emplace_back(22);//insert 2 into vector
 cout<<v[0]<<v[1]; //return garbage value on non existent index
+
 vector<pair<int,int>> p;
 p.push_back({1,2});
 p.emplace_back(1,2);//automatically assume {}
-
+cout<<"\n"<<p[0].first<<" "<<p[0].second;
 
 vector<int> a(5,100); // a={100,100,100,100,100}
 vector<int> b(5);//b={0,0,0,0,0} ; depends on compiler
+
 
 vector<int> c(a);//copy vector
 
@@ -43,8 +45,7 @@ vector<int>:: iterator it = v.begin();//points to the memrory of first index
 //vector<int>:: iterator it = v.end();//point to the null element or one ahead the last element we need to do it-- to point it on last element of the vector;
 //vector<int>:: iterator it = v.rend();//point before the zero index
 //vector<int>:: iterator it = v.rbegin(); //point to the last element
-
-cout<<*it;
+cout<<"\n"<<*it;
 cout<<"\n"<<v.back();//print last element
 
 }
