@@ -207,12 +207,7 @@ void binaryTriangle(int n)
 
 void symmetryCrown(int n)
 {
-    if (n > 9)
-    {
-        cout << "Enter a number less than 10\n\n";
-    }
-    else
-    {
+    
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j <= i; j++)
@@ -234,15 +229,11 @@ void symmetryCrown(int n)
             cout << "\n";
         }
     }
-}
+
 void symmetryCrownVoid(int n)
 {
-    if (n > 9)
-    {
-        cout << "Enter a number less than 10\n\n";
-    }
-    else
-    {
+    
+    
         for (int i = n - 1; i >= 0; i--)
         {
             for (int j = 0; j <= i; j++)
@@ -264,4 +255,3 @@ void symmetryCrownVoid(int n)
             cout << "\n";
         }
     }
-}
