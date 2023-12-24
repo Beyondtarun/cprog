@@ -2,11 +2,14 @@
 using namespace std;
 void explainPair();
 void explainVector();
+void explainList();
+void explainDeque();
 int main()
 {
 
     // explainPair();
-    explainVector();
+    // explainVector();
+    explainList();
     return 0;
 }
 
@@ -32,7 +35,7 @@ void explainVector()
     v.push_back(95);
     v.push_back(45);
     v.push_back(145);
-    v.emplace_back(22);   // insert 2 into vector
+    v.emplace_back(22);   // insert 22 into vector faster than push_back
     cout << v[0] << v[1]; // return garbage value on non existent index
 
     vector<pair<int, int>> p;
@@ -63,15 +66,64 @@ void explainVector()
         cout << "\n"
              << *it;
     }
+
+    // auto: auto assign the data type
+    for (auto a : v)
+    { // this is not a iterator
+        cout << "\n"
+             << a;
+    }
+    for (auto a = v.begin(); a != v.end(); a++)
+    {
+        cout << "\n"
+             << *a;
+    }
+
+    // Deletion in a vector
+    // v={11,12,16,95,45,145,22}
+    cout << "\n\tdeletion";
+    // v.erase(v.begin() + 1); // delete 12;- deletion by giving location
+    v.erase(v.begin() + 1, v.begin() + 4); // delete 12,16,95 exclude last address v.erase(starting and end address)
+    for (it = v.begin(); it != v.end(); it++)
+    { // this is not a iterator
+        cout << "\n"
+             << *it;
+    }
+
+    // INSERT
+    v.insert(v.begin(), 100); // insert 100 at first position
+    // v.insert(v.begin()+1,v2.begin(),v2.end());//copy v2 vector into v1
+    for (auto a : v)
+    {
+        cout << "\n"
+             << a;
+    }
+
+    // v.swap(v2);//swap elemets of v2 and v2
+    // v.size();
+    // v.pop_back();//pop last element
+    // v.clear()//empty vector
+    // v.empty()//empty or not
+}
+
+void explainList()
+{
+    list<int> ls;
+    ls.push_back(10);
+    ls.push_back(10);
+    ls.push_back(10);
+    ls.push_front(20);  // push at first position similar to v.insert(v.begin)
+    ls.emplace_front(); // insert 0 if nothing given
+    for (auto a : ls)
+    {
+        cout << "\n"
+             << a;
+    }
+    // rest all the functions are same
+}
+
+void explainDeque()
+{
+
     
-//auto: auto assign the data type
-    for(auto it : v){ // this is not a iterator
-        cout<<"\n"<<it;
-    }
-    for(auto it = v.begin();it!=v.end();it++){
-        cout<<"\n"<<*it;
-    }
-
-//Deletion in a vector
-
 }
