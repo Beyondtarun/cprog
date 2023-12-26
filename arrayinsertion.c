@@ -11,7 +11,6 @@ void main()
   s1.id=1;
   strcpy(s1.name,"tarun");
 
-    
     printf("id is: %d \n", s1.id);
     
     printf("%s", s1.name);  
