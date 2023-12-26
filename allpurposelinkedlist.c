@@ -49,7 +49,7 @@ void main()
             printf("\n\t5: Reverse");
             printf("\n\t6: Sort");
             printf("\n\t7: Size");
-            printf("\n\tENTER YOUR CHOICE: ");
+            printf("\n\tENTER YOUR CHOICE(sort and size is not in work): ");
             scanf("%d", &menuchoice);
 
             switch (menuchoice)
