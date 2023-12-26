@@ -4,6 +4,7 @@ struct stud{
     int id;
     char name[10];
 };
+
 void main()
 
 {   
