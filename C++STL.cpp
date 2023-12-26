@@ -124,6 +124,6 @@ void explainList()
 
 void explainDeque()
 {
-csal,;
+
     
 }
