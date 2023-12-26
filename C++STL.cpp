@@ -125,5 +125,6 @@ void explainList()
 void explainDeque()
 {
 
+    deque<int> d ;
     
 }
