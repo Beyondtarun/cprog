@@ -19,7 +19,7 @@ void explainPair()
     cout << p.first << p.second;
     pair<int, pair<int, int>> l = {1, {2, 3}};
     cout << l.first << l.second.first;
-    pair<int, int> arr[] = {{1, 2}, {2, 5}, {3, 4}};
+    pair<int, int> arr[] = {{1, 2}, {3, 5}, {6, 4}};
     cout << arr[1].second;
 }
 void explainVector()
