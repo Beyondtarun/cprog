@@ -5,7 +5,7 @@ void rightHalfTriangle(int n);
 void leftHalfTriangle(int n);
 void fullPyramid(int n);
 void reversePyramid(int n);
-void kite(int n);
+void diamond(int n);
 void rotatedTriangle(int n);
 void numberCrown(int n);
 void binaryTriangle(int n);
@@ -21,7 +21,7 @@ int main()
 
     cout << "\n\n\tEnter the value on Lines: ";
     cin >> n;
-    cout << "\n\tChoice(s)\n\n\t\t1. Right Half Triangle.\n\t\t2. Left Half Triangle.\n\t\t3. Full Pyramid.\n\t\t4. Reverse Pyramid.\n\t\t5. Kite.\n\t\t6. Rotated Triangle.\n\t\t7. Binary Triangle.\n\t\t8. Number Crown.\n\t\t9. Symmetric Crown.\n\t\t10. Symmetric Crown Void.";
+    cout << "\n\tChoice(s)\n\n\t\t1. Right Half Triangle.\n\t\t2. Left Half Triangle.\n\t\t3. Full Pyramid.\n\t\t4. Reverse Pyramid.\n\t\t5. Diamond.\n\t\t6. Rotated Triangle.\n\t\t7. Binary Triangle.\n\t\t8. Number Crown.\n\t\t9. Symmetric Crown.\n\t\t10. Symmetric Crown Void.";
     int choice;
     cout << "\n\n\tEnter choice: ";
     cin >> choice;
@@ -42,7 +42,7 @@ int main()
         reversePyramid(n);
         break;
     case 5:
-        kite(n);
+        diamond(n);
         break;
     case 6:
         rotatedTriangle(n);
@@ -124,7 +124,7 @@ void reversePyramid(int n)
     }
 }
 
-void kite(int n)
+void diamond(int n)
 {
     for (int i = 0; i < n; i++)
     {
