@@ -206,8 +206,7 @@ void binaryTriangle(int n)
 }
 
 void symmetryCrown(int n)
-{
-    
+{   
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j <= i; j++)
@@ -231,9 +230,7 @@ void symmetryCrown(int n)
     }
 
 void symmetryCrownVoid(int n)
-{
-    
-    
+{    
         for (int i = n - 1; i >= 0; i--)
         {
             for (int j = 0; j <= i; j++)
